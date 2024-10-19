@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+/* by using -- we create a variable that we use for repeted uscase */
+:root {
+  --main-color: rgba(60, 103, 160, 0.688);
+  --dark-color: #272626;
+  --light-color: #f1f1f1;
+  --hover-color: #265cb5b0;
+}
+
+body {
+  /* var() use for use variable */
+  background-color: var(--main-color);
+  overflow-x: hidden;
+}
+.navbar {
+  width: 98vw;
+  background-color: var(--dark-color);
+  overflow: hidden;
+  padding: 7px;
+  position: sticky;
+  top: 0px;
+}
+h1 {
+  font-family: "Playwrite PE", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center; 
+  margin: 3px;
+  padding: 5px;
+  color: var(--light-color);
+}
+
+.parent {
+  width: 99vw;
+  height: 90vh;
+  background-color: #298e879d;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5vh;
+  /* padding: 5vw; */
+  /* border: 2px solid rgb(148, 124, 87); */
+}
+.one {
+  height: 80vh;
+  width: 30vw;
+  font-family: "Playwrite PE", cursive;
+  font-weight: bold;
+  font-style: normal;
+  margin: 3px;
+  /* padding: 5px; */
+  color: var(--light-color);
+  background-color: #0e101f9d;
+  margin-left: 10vw;
+  padding: 1vw;
+  font-size: small;
+  margin-bottom: 15vh;
+  overflow-y: scroll;
+}
+.two {
+  font-size: small;
+  height: 80vh;
+  width: 30vw;
+  font-family: "Playwrite PE", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  margin: 3px;
+  padding: 5px;
+  color: var(--light-color);
+  background-color: #0e101f9d;
+  margin-right: 10vw;
+  margin-left: 6vw;
+  margin-bottom: 15vw;
+  padding: 1vw;
+  overflow-y: scroll;
+}
+ul {
+  display: flex;
+  /* justify-content: space-between; */
+  /* padding: 5px; */
+  gap: 23px;
+}
+ul li {
+  list-style: none;
+  margin: 0 10px;
+  padding-left: 6px;
+  transition: background-color 0.3s ease;
+}
+ul li a {
+  color: rgb(119, 206, 249);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  
+}
+ul li a:hover {
+  color: var(--hover-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.box {
+  width: 50vw;
+  height: 17vh;
+  margin: 10vh;
+  border-radius: 50px;
+  background-color: rgb(255, 149, 79);
+  margin-left: 23vw;
+  font-family: "Playwrite PE", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  align-items: center;
+  font-size: 26px;
+  color: var(--light-color);
+}
+img {
+  opacity: 60%;
+  border-radius: 60px;
+  position: fixed;
+  bottom: 8%;
+  left: 88%;
+}
+footer {
+  width: 98vw;
+  background-color: var(--dark-color);
+  overflow: hidden;
+  padding: 5px;
+  bottom: 0px;
+  color: grey;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 20
+  (--main-color);
+}
